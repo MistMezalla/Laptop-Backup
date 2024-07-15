@@ -1,0 +1,21 @@
+->Range of values for:- 
+* -10^9 < int < +10^9
+* -10^12 < long int < 10^12
+* -10^18 < long long int < 10^18
+
+->For code snippet:-
+int a = 10^5;
+int b = 10^5;
+long int c = a * b;
+long int d = a * 1LL * b;
+// o/p :-
+c: overflown(analogous to 2's and 1's complement overflow case) int value (!= 10^10)
+d: 10^10 (by virtue of 1LL(a int typecasted long long int number))
+
+-> double a=10^3;
+cout <<fixed <<c;
+cout << c;
+o/p:-
+1000.000000
+1e+3
+

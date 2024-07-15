@@ -1,0 +1,15 @@
+-> for the i/p:-
+3 
+acbf dfjnsjd
+dfhsdb dsfbds sjfdbdsh
+dfbsdhf jfddugfyug
+
+-> in the abv i/p 3 stands for the test cases.
+
+-> when 3 is taken as i/p via the means of the 'cin' then cursor is still at the line 1 of the i/p console.
+-> If a getline() is followed subsequently then it will store the '\n' in the string variable which has used getline() for the very purpose.
+
+-> A solution to this problem is to use:-
+cin.ignore()
+
+subsequent of usage of cin.

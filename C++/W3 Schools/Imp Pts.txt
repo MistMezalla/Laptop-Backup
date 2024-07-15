@@ -1,0 +1,25 @@
+->The error in method1 code arises from the fact that the Vehicle class is inherited by the Car class using protected 
+inheritance. This means that the public and protected members of the Vehicle class become protected members of the Car 
+class. As a result, they are not accessible directly from an instance of Car.
+
+->Hence see method2 which makes use of encapsulation concept to acces the parent(Vehicle) class attributes to the child(Car) class.
+
+-> printf(%.2f) for example can be implemented via the means of
+cout << fixed << setprecision(2) : in this case the parameter is giv as 2
+
+* Destuctors in OOPS:-
+-> counter ana of Constructors
+-> syntax:
+~<class name>
+{
+//block code of destructor if any
+}
+-> practical example:(implicit call)
+when an obj is defined with a scope then after funtion comes out of the scope the 'desturctor' is called 'implicitly' to del that obj 
+instance
+-> destructors are typically called implicitly when an object goes out of scope or when it's explicitly deleted. However, it's rare and 
+generally not recommended to explicitly call destructors yourself, as it can lead to undefined behavior or resource leaks if not done 
+properly.
+-> exmple (or syntax) for explicit call:
+MyClass obj;  // Constructor called
+obj.~MyClass();  // Destructor called explicitly

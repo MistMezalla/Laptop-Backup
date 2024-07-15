@@ -1,0 +1,17 @@
+=> See Imp Pts of OOPS: Destuctors for preface if req.
+
+=> If an obj is declared devoid of 'new' keyword then the obj is created in "Stack Seg".
+-> hence lifetime of the obj is till the scope of the body(or stack) in which it was called. 
+-> Upon the verge of body termination the destructors are called implicitly to del the obj from the mem
+
+-> however if the obj is called with the usage of the 'new' keyword then obj is "Dynamically Allocated" aka created in "Heap Seg".
+-> and thus the obj is removed from the memory upon the usafe of 'delete <obj name>' and for the case of arrays '<delete[] <arr name>'.
+
+->The scope of the pointer to the dynamically allocated object (created using the new keyword) is local to its declaration function, 
+but the actual memory allocated for the object resides on the heap and persists until it is explicitly deallocated using delete. 
+->This means that the memory for the object is not automatically freed when the pointer goes out of scope.
+
+=>The segmentation fault is not caught by the try-catch block in the ins_bef_val method because segmentation faults are not exceptions that 
+can be caught by C++'s exception handling mechanism. Segmentation faults are typically caused by invalid memory access, such as 
+dereferencing a null or invalid pointer, and result in the operating system terminating the program. These faults are not represented as 
+std::exception and cannot be handled by catch blocks in C++.

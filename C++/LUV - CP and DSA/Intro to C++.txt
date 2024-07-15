@@ -1,0 +1,29 @@
+
+-> In C++ endl eqv to '\n'
+
+-> In both C and C++, '' (empty char) is an invalid literal.
+
+->In C++ and latest versions of C, void main is invalid,i.e., main should have some return type.
+
+->Usage of <bits/stdc++.h>:- 
+*Pros:-
+(i) Convenience: Includes all standard libraries, which means you don't need to include each library separately.
+(ii) Speed in Coding: Useful in competitive programming where the time to write and test code is crucial.
+*Cons:-
+(i) Compile Time: Increases compile time because it includes all the libraries, even those not used in the program.
+(ii) Portability: Not portable to non-GCC compilers or environments where bits/stdc++.h is not available.
+(iii) Maintenance: Including unnecessary libraries can lead to maintenance issues and potentially longer build times in larger projects.
+
+-> The using namespace std line can be omitted and replaced with the std keyword, followed by the :: operator for string (and cout) 
+objects.
+
+-> There is also a "for-each loop", which is used exclusively to loop through elements in an array
+*Syntax
+for (type variableName : arrayName) 
+{
+  // code block to be executed
+}
+
+* for each loop can't be iterated over two arrays simultaneuosly
+
+
