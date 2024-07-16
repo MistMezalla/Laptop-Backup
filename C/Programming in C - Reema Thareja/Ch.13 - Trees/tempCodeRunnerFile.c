@@ -1,0 +1,1 @@
+add_left(Tree **node,int data)
