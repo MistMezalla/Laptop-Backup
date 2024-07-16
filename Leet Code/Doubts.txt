@@ -1,0 +1,6 @@
+1. Qn :- 382
+-> why b%phi(n) ==0 => b == phi(n) and != 0 in further code computations(want a proper mathematical proof)
+-> if n is large prime number and b = n-1, then how to compute
+
+2. Qn :- 148
+-> Space = O(1) possible?
