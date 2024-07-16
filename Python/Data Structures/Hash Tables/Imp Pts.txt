@@ -1,0 +1,28 @@
+1. Hash Map vs Lists
+(i) Hash maps better than lists when:-
+->When you need to access elements based on keys rather than indices; coz nested lists will take O(n) for searching for sepcific key or value
+
+->When the dataset undergoes frequent insertions and deletions, hashmaps provide efficient operations. Lists can be inefficient in these 
+scenarios as inserting or deleting elements often requires shifting other elements.
+
+->When the dataset contains many potential keys but only a few of them have values (sparse data), hashmaps are more memory efficient. 
+Lists would waste space storing placeholders for non-existent elements.
+Ex: user_settings = {
+    "user123": {"theme": "dark", "notifications": "off"},
+    "user789": {"theme": "light"}
+}
+
+->Avoiding Duplicate Keys
+
+2. Linear Probing
+=> when hash table(size =10) is full the 11th eem addition will lead:
+->to dynamic resizing by growth strategy(2x of the existing size) of the hash table
+-> rehashing of the elem wrt new size.
+
+=> Worst case time for ins and searching is O(n)
+-> coz all elem hv to be searched in the table for ins or search for an elem
+
+=> Better hash funtions are: Qaudratic probing and Double Hashing
+-> However, for higher powers, detecting cycles (i.e., cases where the probing sequence might fall into a loop and never cover the entire
+ table) becomes more complicated. 
+-> and detecting any cycle will take O(n) add time hence won't serve the purpose of O(1) search

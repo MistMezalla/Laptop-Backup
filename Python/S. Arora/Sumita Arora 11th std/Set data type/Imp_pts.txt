@@ -1,0 +1,31 @@
+=> common operation:-
+(i) <set>.add(<elem to be added>)
+
+(ii) all mathematical operation on set like
+-> union : x|y 
+-> intersection : x&y
+-> diff : x-y
+abv three return the res set and don't make any change to the parameter setsx
+-> is x subset y: x<y
+
+(iii) <set>.remove(<item to be removed>) and <set>.discard(<item to be removed>) : remove will raise error upon not finding elem to be del
+while discard will return the og set agn.
+
+(iv) <set>.clear() and del <set>
+
+(v) <set>.update(<set>)(nothing but another way to use union of sets) : doesn't return any set and make change to the obj set.
+
+(vi) <set>.difference_update(<set>) :sim to (v)
+
+(vii) <set>.symmetric_difference(<set>) : returns new set that comprises of elem belonging to (A union B) - (A inter B)
+
+ 
+
+=>Imp Pts:-
+-> Set data type considers 'True' and '1' to be identical, sim "False" and "0". First one to appear as parameter to set definition will
+stay in the res set.
+
+-> add(<hashable elem are only allowed)
+
+-> You can also use the pop() method to remove an item, but this method will remove a random item, so you cannot be sure what item that 
+gets removed. Avg case time complexity is O(1).

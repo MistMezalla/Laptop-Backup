@@ -1,0 +1,3 @@
+1. CB_Excercise:-
+=> we can replace a slice of a list by a 'list' of smaller, larger or eqv size of slice to be replaced.
+-> Ex: marvel_heroes[1:3] = ["dr strange"] 

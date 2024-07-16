@@ -1,0 +1,20 @@
+=> Exception Handling: Removed unnecessary try-except blocks and replaced them with condition checks. : why were they removed and replaced 
+with conditionals?
+
+->Error Semantics: Exceptions should represent truly exceptional cases or errors that are unexpected and not part of regular flow. Regular 
+conditions (like a list being empty) are expected states and should be handled using conditionals.
+
+=> Circular Doubly Linked List:-
+-> Error code:
+class Node:
+    def __init__(self,data=None,next=self,prev=self):
+        self.data=data
+        self.next = next
+        self.prev = prev
+
+->Error:
+The Node class you provided appears to be intended for use in a doubly linked list, but there are some issues with the constructor's 
+parameters, specifically with the default values for next and prev. Setting the default values to self will result in a NameError since 
+self is not defined when the default values are evaluated.
+
+->See the corrected code in the file(usage of comprehensions aka(case specific) ternary operator.

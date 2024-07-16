@@ -1,0 +1,12 @@
+import inspect
+
+def current_line():
+    return inspect.currentframe().f_back.f_lineno
+
+def example_function():
+    print(f"This is line {current_line()}")
+    print(f"And this is line {current_line()}")
+
+example_function()
+
+"The abv code will mimic __LINE__ in c/c++"

@@ -1,0 +1,5 @@
+fr1=open(r'C:/Users/Harshal Sanas/Desktop/Python/S.Arora 12th std/poem(my mother at sixty six).txt','r')
+str1=fr1.read()
+bytes=len(str1)
+print(bytes)
+fr1.close()
