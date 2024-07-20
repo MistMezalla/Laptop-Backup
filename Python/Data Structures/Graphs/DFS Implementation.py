@@ -41,11 +41,10 @@ class Graph:
         visited = {key: False for key in self.adj_list}
         arr = {key: -1 for key in self.adj_list}
         dep = {key: -1 for key in self.adj_list}
+        parent = {key: None for key in self.adj_list}
         time = 0
 
         stack.append((start, 'In'))
-        parent = {key: None for key in self.adj_list}
-
         while stack:
             node, state = stack.pop()
 
@@ -56,10 +55,11 @@ class Graph:
                     arr[node] = time
                     print(node, end=" ")
                     stack.append((node, "Out"))
+                    if parent[node]:
+                        self.tree_edges.append((parent[node],node))
                     for neighbour in self.adj_list[node]:
                         if not visited[neighbour]:
                             stack.append((neighbour, "In"))
-                            self.tree_edges.append((node, neighbour))
                             parent[neighbour] = node
                         elif neighbour != parent[node]:
                             if arr[neighbour] < arr[node]:
