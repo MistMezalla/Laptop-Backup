@@ -1,0 +1,4 @@
+-> Since (0,1) of all real numbers is uncountable by diagonalisation hence set of real numbers is also incountacle as it is surjective
+	-> with a rule say every elem of (0,1) is mapped by thier multiples in real numbers set
+	-> example 1/2 is mapped by 1 , 1.5 , 2 , ...
+

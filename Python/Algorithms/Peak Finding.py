@@ -1,22 +1,28 @@
-def one_D(nums,lo = 0,hi = None):
+'''
+Resolved = 1
+Revised = 1
+'''
+def one_D(nums, lo=0, hi=None):
     if hi is None:
-        hi = len(nums)-1
+        hi = len(nums) - 1
 
-    if hi == lo:
+    if not nums:
+        raise ValueError("The input array is empty.")
+
+    if lo == hi:
         return nums[lo]
 
-    mid = (hi + lo)//2
+    mid = (hi + lo) // 2
 
-    if (mid != 0 and nums[mid] > nums[mid-1]) and (mid != len(nums) - 1 and nums[mid] > nums[mid+1]):
+    if (mid == 0 or nums[mid] >= nums[mid - 1]) and (mid == len(nums) - 1 or nums[mid] >= nums[mid + 1]):
         return nums[mid]
-
-    elif mid > 0 and nums[mid] < nums[mid-1]:
-        return one_D(nums,lo,mid-1)
-
+    elif mid > 0 and nums[mid] < nums[mid - 1]:
+        return one_D(nums, lo, mid - 1)
     else:
-        return one_D(nums,mid+1,hi)
+        return one_D(nums, mid + 1, hi)
 
-print(one_D([1,2,3]))
+print(one_D([6, 2,8]))  # Should return 6
+
 
 def Two_D_greedy_ascent(arr):
     rows = len(arr)

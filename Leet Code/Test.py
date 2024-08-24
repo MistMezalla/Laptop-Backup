@@ -1,89 +1,39 @@
 from typing import Optional
-
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
 
 class Solution:
-    def sortList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+    def mergeKLists(self, lists: list[Optional[ListNode]]) -> Optional[ListNode]:
+        ind = len(lists)
+        i = 0
+        while i < ind:
+            l1 = lists[i]
+            l2 = lists[i+1] if i+1 < ind else None
 
-        def partition(start: ListNode, end: ListNode) -> ListNode:
-            """
-            Partitions the linked list around a pivot element.
+            dummy = ListNode(0)
+            dummy.next = self.merge(l1,l2)
+            lists.append(dummy.next)
 
-            Args:
-                start: The starting node of the sublist to partition.
-                end: The node after the end of the sublist (exclusive).
+            ind += 1
+            i += 2
 
-            Returns:
-                The new pivot node.
-            """
+        return lists[-1] if lists else None
 
-            pivot = start
-            current = start.next
-            last_smaller = start  # Track the last smaller element
+    def merge(self,l1,l2):
+        res = ListNode(0)
+        curr = res
 
-            while current != end:
-                if current.val <= pivot.val:
-                    # Swap values if current element is less than or equal to the pivot
-                    current.val, last_smaller.next.val = last_smaller.next.val, current.val
-                    last_smaller = last_smaller.next
-                current = current.next
+        while l1 and l2:
+            if l1.val <= l2.val:
+                curr.next = l1
+                l1 = l1.next
+            else:
+                curr.next = l2
+                l2 = l2.next
+            curr = curr.next
 
-            # Swap the last smaller element (or pivot itself) with the element after the pivot
-            last_smaller.next.val, pivot.val = pivot.val, last_smaller.next.val
-            return last_smaller.next
+        curr.next = l1 if l1 else l2
 
-        def quick_sort(start: ListNode, end: Optional[ListNode]) -> None:
-            """
-            Sorts a sublist of the linked list using Quick Sort recursively.
-
-            Args:
-                start: The starting node of the sublist to sort.
-                end: The node after the end of the sublist (exclusive).
-            """
-
-            if start != end:
-                pivot = partition(start, end)
-                quick_sort(start, pivot)
-                quick_sort(pivot.next, end)
-
-        if not head or not head.next:
-            return head  # Handle empty or single-node lists
-
-        # Find the tail node (not strictly necessary, but can be useful for optimization)
-        tail = head
-        while tail.next:
-            tail = tail.next
-
-        quick_sort(head, tail)
-        return head
-
-def build_linked_list(nums):
-    if not nums:
-        return None
-    head = ListNode(nums[0])
-
-    node = head
-    for i in range(1, len(nums)):
-        node.next = ListNode(nums[i])
-        node = node.next
-
-    return head
-
-def print_linked_list(head: Optional[ListNode]):
-    """
-    Prints the linked list values.
-    """
-
-    while head:
-        print(head.val, end=' ')
-        head = head.next
-    print()
-
-nums = [2, 3, 7, 1, 8, 4, 6, 5]
-head = build_linked_list(nums)
-sol = Solution()
-new_head = sol.sortList(head)
-print_linked_list(new_head)
+        return res.next

@@ -1,3 +1,8 @@
+'''
+Resolved = 1
+Revised = 1
+'''
+
 # undirected list(list) implementation
 from collections import deque
 class Graph:

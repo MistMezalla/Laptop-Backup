@@ -4,7 +4,7 @@
     -> use index pointers(perfect mathematical formulations) to mimic the stack like behaviour but not use stack data
     str dir(only make use of dynamic arr)
 '''
-from collections import deque
+
 class BrowserHistory:
     def __init__(self,homepage: str):
         self.URLs = [homepage]

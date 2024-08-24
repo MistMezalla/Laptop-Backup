@@ -1,3 +1,7 @@
+'''
+Revised = 1
+Resolved = 0
+'''
 from collections import deque
 class Solution:
     def nextGreaterElements(self, nums: list[int]) -> list[int]:

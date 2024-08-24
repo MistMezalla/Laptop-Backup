@@ -1,0 +1,28 @@
+=> Below topics to be completed by Monday 19/8/24 without fail
+
+1. Leetcode(today)
+-> Bin Search rev
+-> Qn 719(?) to be solved : 56,153,43,415
+-> K closet pts to solve
+-> Linked List Qn to solve
+-> BST rev
+
+2. Probab(today) - Done 1 day late
+-> Lec 5 Practice
+-> Rev prev lec pr qns
+-> Conti with Lec
+
+3. Discrete(by tomorrow)
+-> Revise all lect form book
+-> resolve the rel qns of those lec
+-> Conti with lec
+
+4. Eco
+-> Read the book H.L ahuja until topics taught
+-> If req refer to videos
+
+5. Algo
+-> complete LUV and NPTEL pr qns rel to graphs(also complete KMP algo from NPTEL section)(today)
+-> complete graph theory(by sunday)
+-> complete DP(by monday if possible)
+

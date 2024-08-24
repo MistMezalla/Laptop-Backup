@@ -11,7 +11,7 @@ class Solution:
         flag = False
         res = 0
         while head:
-            if head.val not in num_set and flag:
+            if head.val not in num_set and flag: # For O(1) access
                 res+=1
                 flag = False
             elif head.val in num_set:

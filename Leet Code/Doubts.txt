@@ -4,3 +4,10 @@
 
 2. Qn :- 148
 -> Space = O(1) possible?
+
+3. Qn 719
+-> Logic of counting pairs
+	-> Why one logic is better than other where both count the pairs correctly?
+
+4. Qn 3261
+-> Why Querying in my method is wrong?

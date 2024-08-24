@@ -1,5 +1,5 @@
 '''
--> In this approach made use of the fact that nodes to be swapped are equidistant fom the endpts on the linked list
+-> In this approach made use of the fact that nodes to be swapped are equidistant fom the end pts on the linked list
 '''
 from typing import Optional
 class ListNode:

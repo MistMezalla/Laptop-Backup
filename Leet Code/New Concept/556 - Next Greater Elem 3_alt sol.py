@@ -16,6 +16,11 @@ class Solution:
         if i==0:
             return -1
 
+        '''
+        -> Once i-1 is found, the next step is to find the smallest digit to the right of i-1 that is greater than 
+        dig[i-1]. This digit is located at position j.
+        -> We are finding smallest greater elem as we are to find next largest number of the digits of number n.
+        '''
         j = len(dig) - 1
         while j > i-1 and dig[i-1] >= dig[j]:
             j-=1
@@ -31,4 +36,4 @@ class Solution:
         return n
 
 sol = Solution()
-print(sol.nextGreaterElement(2435321))
+print(sol.nextGreaterElement(24354321))

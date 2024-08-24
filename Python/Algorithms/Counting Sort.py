@@ -1,3 +1,7 @@
+'''
+-> The below logic is only limited to positive numbers and fails for negatives
+-> See Question 912 for negative number handling
+'''
 def Counting_Sort(arr):
     count = [0] * (max(arr)+1)
 
@@ -5,7 +9,7 @@ def Counting_Sort(arr):
         count[num] += 1
 
     pos = 0
-    for i in range(len(count)):
+    for i in range(len(count)): #pf_sum
         temp = count[i]
         count[i] = pos
         pos += temp
@@ -34,7 +38,7 @@ def Counting_Sort_alt(arr):
         count[num]-=1
 
     return res
-nums = [2,3,1,0,4,1,2,3,4]
+nums = [2,1,0,2,0]
 print(Counting_Sort(nums))
 print(Counting_Sort_alt(nums))
 

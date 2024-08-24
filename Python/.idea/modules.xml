@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../IIIT Guwahati/CS/CS 201 (Algorithm)/.idea/CS 201 (Algorithm).iml" filepath="$PROJECT_DIR$/../IIIT Guwahati/CS/CS 201 (Algorithm)/.idea/CS 201 (Algorithm).iml" />
       <module fileurl="file://$PROJECT_DIR$/../Leet Code/.idea/Leet Code.iml" filepath="$PROJECT_DIR$/../Leet Code/.idea/Leet Code.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Python.iml" filepath="$PROJECT_DIR$/.idea/Python.iml" />
     </modules>

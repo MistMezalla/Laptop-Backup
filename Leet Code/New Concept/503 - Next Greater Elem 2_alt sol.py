@@ -1,7 +1,10 @@
 '''
 -> This version avoids the need for a separate queue and handles the circular nature directly by iterating up to 2*n.
 '''
-
+'''
+Revised = 1
+Resolved = 0
+'''
 from collections import deque
 class Solution:
     def nextGreaterElements(self, nums: list[int]) -> list[int]:

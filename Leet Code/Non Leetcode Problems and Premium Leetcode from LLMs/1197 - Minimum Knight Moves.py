@@ -1,4 +1,9 @@
 '''
+Resolved = 1
+Revised = 1
+'''
+
+'''
 -> It is a premium leetcode question
 -> Hence solving the spoj qn
 '''
