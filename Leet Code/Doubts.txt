@@ -11,3 +11,6 @@
 
 4. Qn 3261
 -> Why Querying in my method is wrong?
+
+5. Qn 1738_alt
+-> Why Solution2 showing slower runtime than Solution1?: Though theoritcally 2 better than 1.

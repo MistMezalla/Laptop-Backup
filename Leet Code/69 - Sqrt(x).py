@@ -10,7 +10,7 @@ class Solution:
 
             while (hi - lo) > 1:
                 mid = (lo + hi) // 2
-                if abs(mid * mid - x) < 1:
+                if 0 <= x - mid * mid < 1:
                     return mid
                 if mid * mid < x:
                     lo = mid

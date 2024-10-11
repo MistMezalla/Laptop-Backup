@@ -25,8 +25,8 @@ class Solution:
         cnt = 0
 
         for i in range(p,q+1):
-            while j <= r and nums[i] > 2 * nums[j]:
-                j += 1
+            while j <= r and nums[i] > 2 * nums[j]: #the array provided as argument to this function is not sorted
+                j += 1                              # Hence can't apply the eff method of counting (ref 719)
             cnt += j - (q+1)
 
 

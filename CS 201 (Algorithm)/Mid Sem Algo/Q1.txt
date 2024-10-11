@@ -1,0 +1,92 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+class Solution {
+public:
+    vector<int> req_points(vector<int> &points,vector<pair<int,int>> &intervals) {
+        sort(intervals.begin(),intervals.end());
+        int chk_pt = intervals[0].second;
+
+        vector<int> res;
+        int pt_push;
+        for (auto pt: points) {
+            if (pt <= chk_pt)
+                pt_push = pt;
+        }
+
+        res.push_back(pt_push);
+
+
+        for (auto interval: intervals) {
+            if (interval.first <= chk_pt && chk_pt <= interval.second)
+                continue;
+
+            else if (interval.second <= chk_pt) {
+                chk_pt = interval.second;
+                res.pop_back();
+                pt_push = interval.second;
+                while (pt_push >= interval.first) {
+                    if (find(points.begin(),points.end(),pt_push) != points.end()) {
+                        res.push_back(pt_push);
+                        break;
+                    }
+                }
+            }
+            else {
+                res.push_back(pt_push);
+                chk_pt = interval.second;
+                pt_push = interval.second;
+                while (pt_push >= interval.first) {
+                    if (find(points.begin(),points.end(),pt_push) != points.end()) {
+                        res.push_back(pt_push);
+                        break;
+                    }
+                }
+            }
+        }
+
+        set<int>(res.begin(),res.end());
+        return res;
+    }
+};
+
+int main() {
+    Solution sol;
+
+    vector<pair<int,int>> intervals1 = {{1,4},{2,5},{3,6}};
+    vector<int> points1 = {1, 3, 4, 6, 7};
+
+    vector<pair<int,int>> intervals2 = {{1,2},{4,5},{7,8}};
+    vector<int> points2 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+    vector<pair<int,int>> intervals3 = {{1,6},{2,5},{3,4}};
+    vector<int> points3 = {1, 2, 3, 4, 5, 6};
+
+    /*vector<pair<int,int>> intervals4 = {{1,4},{2,5},{3,6}};
+    vector<int> points1 = {1, 3, 4, 6, 7};
+
+    vector<pair<int,int>> intervals1 = {{1,4},{2,5},{3,6}};
+    vector<int> points1 = {1, 3, 4, 6, 7};*/
+
+
+    auto res1 = sol.req_points(points1,intervals1);
+    auto res2 = sol.req_points(points2,intervals2);
+    auto res3 = sol.req_points(points3,intervals3);
+
+    for (auto pt: res1) {
+        cout << pt << " ";
+    }
+    cout << endl;
+
+    for (auto pt: res2) {
+        cout << pt << " ";
+    }
+    cout << endl;
+
+    for (auto pt: res3) {
+        cout << pt << " ";
+    }
+    cout << endl;
+
+    return 0;
+}

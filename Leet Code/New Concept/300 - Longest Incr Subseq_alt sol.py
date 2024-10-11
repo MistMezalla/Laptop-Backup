@@ -30,41 +30,35 @@
 Revise = 2
 Resolve = 1
 '''
-from bisect import bisect_left
 class Solution:
     def lengthOfLIS(self, nums: list[int]) -> int:
         seq = [nums[0]]
+        def bin_Search(x: int):
+            lo = 0
+            hi = len(seq) - 1
 
-        def bin_search(x: int):
-            left = 0
-            right = len(seq)- 1
+            while hi - lo > 0:
+                mid = (hi+lo)//2
 
-            while right - left > 1:
-                mid = (left+right) // 2
-
-                if seq[mid] == x:
-                    return mid
-                if seq[mid] > x:
-                    right = mid - 1
+                if seq[mid] >= x:
+                    hi = mid
                 else:
-                    left = mid + 1
+                    lo = mid + 1
 
-            if seq[left] >= x:
-                return left
-            else:
-                return right
-
+            # if seq[lo] >= x:
+            #     return lo
+            # else:
+            #     return hi
+            return lo
 
         for i in range(1,len(nums)):
             if nums[i] > seq[-1]:
                 seq.append(nums[i])
-            # else:
-            #     seq[bin_search(nums[i])] = nums[i]
             else:
-                ind = bisect_left(seq,nums[i])
-                seq[ind] = nums[i]
+                seq[bin_Search(nums[i])] = nums[i]
 
         return len(seq)
+
 
 sol = Solution()
 print(sol.lengthOfLIS([10,9,2,5,3,7,101,18]))

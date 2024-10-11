@@ -1,4 +1,5 @@
 N = 20
+# 1 indexed based implementation
 class Max_Priority_Queues:
     def __init__(self,size = 0):
         self.arr = ['inf']

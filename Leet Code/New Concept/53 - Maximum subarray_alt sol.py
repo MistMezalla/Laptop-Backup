@@ -39,6 +39,7 @@ class Solution1:
 
 
 sol1 = Solution1()
+print(sol1.maxSubArray([-1,-2,-3,-4]))
 print(sol1.maxSubArray([-2,1,-3,4,-1,2,1,-5,4]))
 print(sol1.maxSubArray([1]))
 print(sol1.maxSubArray([5,4,-1,7,8]))

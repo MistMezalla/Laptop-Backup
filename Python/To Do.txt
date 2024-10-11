@@ -2,7 +2,7 @@
 
 1. Leetcode(today)
 -> Bin Search rev
--> Qn 719(?) to be solved : 56,153,43,415
+-> Qn 719(?) to be solved : 2407(not compulsory)
 -> K closet pts to solve
 -> Linked List Qn to solve
 -> BST rev

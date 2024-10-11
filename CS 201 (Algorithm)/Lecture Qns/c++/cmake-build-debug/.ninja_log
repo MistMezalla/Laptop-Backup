@@ -1,0 +1,17 @@
+# ninja log v6
+5	2638	7480058904355735	CMakeFiles/c__.dir/Bisection_root_finding.cpp.obj	4dc7bfe6f3a56447
+50	2707	7480058904801239	CMakeFiles/c__.dir/Count_inversions.cpp.obj	604711140220f3ac
+19	3036	7480058904499231	CMakeFiles/c__.dir/Closest_Pair.cpp.obj	ecf5d2c301062542
+2643	5267	7480058930740327	CMakeFiles/c__.dir/Interval_Containment.cpp.obj	c7cc92c4e3083665
+3036	5525	7480058934664206	CMakeFiles/c__.dir/Karatsuba.cpp.obj	c0d6d77e07b96b98
+2707	5719	7480058931380505	CMakeFiles/c__.dir/Job_scheduling.cpp.obj	42e0c6e38d689ff5
+5525	8032	7480058959548859	CMakeFiles/c__.dir/Max_2nd_max_DNC.cpp.obj	95cf5e8c32be38d
+5268	8131	7480058956974718	CMakeFiles/c__.dir/Max_2nd_max.cpp.obj	d8d6b88c16a59e57
+5719	8171	7480058961493320	CMakeFiles/c__.dir/Max_DNC.cpp.obj	de49ae10c7295183
+8032	10308	7480058984624526	CMakeFiles/c__.dir/max_profit.cpp.obj	f82dacd5343c229f
+8171	10531	7480058986020629	CMakeFiles/c__.dir/Merge_and_Count.cpp.obj	24359e4f87cc4d46
+8131	10566	7480058985606926	CMakeFiles/c__.dir/Meadin_of_Medians.cpp.obj	bbea84fbc37db136
+10308	12512	7480059007384171	CMakeFiles/c__.dir/Min_Max.cpp.obj	af688016528d885c
+10532	12818	7480059009624777	CMakeFiles/c__.dir/Min_Max_DNC.cpp.obj	3c319a94cfcc0235
+10567	13104	7480059009967682	CMakeFiles/c__.dir/Test.cpp.obj	ca9e53d9711a2ab0
+9	1457	7480059822261042	CMakeFiles/c__.dir/Bisection_root_finding.cpp.obj	4dc7bfe6f3a56447

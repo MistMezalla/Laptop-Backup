@@ -28,7 +28,7 @@ class Solution:
             while min(cnt['0'],cnt['1']) > k:
                 cnt[s[left]] -= 1
                 left += 1
-            right_to_left[right] = left
+            right_to_left[right] = left #starting pos(left) of the valid substring ending at right(ending pos)
 
         right = len(s)-1
         cnt = {'0': 0, '1': 0}
@@ -38,7 +38,7 @@ class Solution:
             while min(cnt['1'],cnt['0']) > k:
                 cnt[s[right]]-= 1
                 right -= 1
-            left_to_right[left] = right
+            left_to_right[left] = right #ending pos(right) of the valid substring starting at left(starting pos)
 
         pf_sum = [0]*(len(s)+1)
         for i in range(1,len(s)+1):
@@ -52,7 +52,9 @@ class Solution:
 
             middle = min(r,left_to_right[l])
             length = middle - l + 1
-            curr = length * (length+1) // 2
+            curr = length * (length+1) // 2 # #of valid substr for the curr length = n(n+1)/2
+
+            #The abv middle computation is done to avoid overcounting by below pf computaion
             curr += pf_sum[r+1] - pf_sum[middle+1]
             res.append(curr)
 
