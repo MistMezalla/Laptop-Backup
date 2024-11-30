@@ -143,3 +143,105 @@ graph1.dfs(1)
 print()
 graph1.dfs_recursive(1)
 print()
+
+class Dir_Graph:
+    def __init__(self):
+        self.adj_list = {}
+
+    def add_edge(self,u,v):
+        if u in self.adj_list:
+            self.adj_list[u].append(v)
+
+        else:
+            self.adj_list[u] = [v]
+
+    def add_edges(self,edge_list):
+        for u,v in edge_list:
+            self.add_edge(u,v)
+
+    def print_adj_list(self):
+        print(self.adj_list)
+
+    def dfs(self):
+        visited = {key: 0 for key in self.adj_list} # 0 = not visited, 1 = in progress, 2 = finished
+        time = 0
+        arr = {key: 0 for key in self.adj_list}
+        dep = {key: 0 for key in self.adj_list}
+        node_list = list(self.adj_list.keys())
+
+        back_edges = []
+        tree_edges = []
+        forward_edges = []
+        cross_edges = []
+
+        def rec_helper(node):
+            visited[node] = 1
+            nonlocal time
+            arr[node] = time
+            time += 1
+
+            for neighbour in self.adj_list[node]:
+                if visited[neighbour] == 0:
+                    tree_edges.append((node,neighbour))
+                    rec_helper(neighbour)
+                elif visited[neighbour] == 1:
+                    back_edges.append((node,neighbour))
+                elif arr[neighbour] > arr[node]:
+                    forward_edges.append((node,neighbour))
+                else:
+                    cross_edges.append((node,neighbour))
+
+            visited[node] = 2
+            dep[node] = time
+            time += 1
+
+        for node in node_list:
+            if visited[node] != 2:
+                rec_helper(node)
+
+        print(tree_edges)
+        print(back_edges)
+        print(forward_edges)
+        print(cross_edges)
+
+# Define a directed graph
+edge_list1 = [
+    (0, 1),
+    (1, 2),
+    (2, 0),  # Back edge (cycle)
+    (1, 3),
+    (3, 4),
+    (4, 1),  # Back edge (cycle)
+    (3, 5),
+    (5, 6),  # Tree edge
+    (6, 3)   # Back edge (cycle)
+]
+
+# Create the graph and add edges
+graph1 = Dir_Graph()
+graph1.add_edges(edge_list1)
+
+# Perform DFS and classify edges
+graph1.print_adj_list()
+graph1.dfs()
+
+print()
+edge_list2 = [
+    (0, 1),
+    (1, 2),
+    (2, 0),  # Back edge (cycle)
+    (1, 3),
+    (3, 4),
+    (4, 1),  # Back edge (cycle)
+    (5, 6),  # Tree edge
+    (6, 3),
+    (0,4) # Back edge (cycle)
+]
+graph2 = Dir_Graph()
+graph2.add_edges(edge_list2)
+
+graph2.print_adj_list()
+graph2.dfs()
+
+
+

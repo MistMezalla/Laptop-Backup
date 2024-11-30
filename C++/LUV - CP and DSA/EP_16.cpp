@@ -44,17 +44,21 @@ int main()
             cout << endl;
             int oddcnt=0;
             int i;
+            int flag;
             for(i=0;i<26;i++)
             {
                 if(oddcnt>1)
                 {
-                    cout << "False" << endl;
+                    flag = 0;
                     break;
                 }
                 if ((arr[i][r]-arr[i][l-1])%2!=0)
                     oddcnt++;
             }
-            cout << "True" <<endl;
+            if (flag==0)
+                cout << "False" << endl;
+            else
+                cout << "True" << endl;
         }
     }
     return 0;

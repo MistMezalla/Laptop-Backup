@@ -50,6 +50,7 @@ class Solution:
         if source == dest:
             return level[source]
 
+        # Done this step as initially adj_list is empty
         visited[dest] = False
         level[dest] = -1
 

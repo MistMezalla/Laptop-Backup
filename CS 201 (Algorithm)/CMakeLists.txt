@@ -59,4 +59,11 @@ add_executable(CS_201__Algorithm_
         "Lab Assgn/Problem Sheet DnC 2/Number_of_Line_intersections.cpp"
         "Lecture Qns/c++/Pow_of_number.cpp"
         "Mid Sem Algo/Q1.cpp"
-        "Mid Sem Algo/Q2.cpp")
+        "Mid Sem Algo/Q2.cpp"
+        "Lab Assgn/Lab 7/LAS_Q1.cpp"
+        "Lab Assgn/Lab 7/LPS_Q2.cpp"
+        "Lab Assgn/Lab 8/Q1.cpp"
+        "Lab Assgn/Lab 8/Q2.cpp"
+        "Lab Assgn/Lab 9/Q1.cpp"
+        "Lab Assgn/Lab 9/Q3.cpp"
+        "Lab Assgn/Lab 9/Q2.cpp")

@@ -33,4 +33,4 @@ class Solution:
 
 sol = Solution()
 print(sol.top_down_fibonacci(5))
-print(sol.bottom_up_fibonacci(0))
+print(sol.bottom_up_fibonacci(5))

@@ -37,11 +37,12 @@ set_bit_maker = (1<<3)
 print(bin(set_bit_maker))
 a = a | set_bit_maker
 print(bin(a))
+print((type(bin(a))))
 print(True if a & set_bit_chker else False)
 
 # Method to toggle ith bit
 a = int("10110011",2)
-print(bin(a ^ (1 << 4)))
+print(bin(a ^ (1 << 0)))
 
 
 

@@ -1,5 +1,5 @@
 '''
--> My sol:-
+-> My sol:-(Correct but slow)
     -> Improvised on the template of Knapsack without profit
 
 -> This sol:-
