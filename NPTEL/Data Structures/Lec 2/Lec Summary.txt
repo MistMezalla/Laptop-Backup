@@ -1,0 +1,18 @@
+=> ADT's : -> ana with classes of OOPS
+
+=> Exception Handling
+
+=> Implementation of Stack:   -> In python via the means of: list,
+									       from collections import deque, and
+									       from queue import LifoQueue
+					-> In C++ via the means of std::stack
+
+=> Application of Stacks: Time Series example
+-> The while loop runs for at most 'one' time. Try out a dry run.
+-> 1st elem pushed by def, next elem: if less than TOS (top of stack) then 'no push'
+						  else pop(TOS) and push(curr elem)
+-> Hence at every iteration of outer for loop size.stack() <= 1. Thus T(n) = O(n).
+
+=> Growable Stack: Two strategies viz, 'tight' and 'growth'
+(i) Tight: O(n**2); coz number of phases of op are linear
+(ii) Growth: O(n); coz number of phases of operation are logarithmic.

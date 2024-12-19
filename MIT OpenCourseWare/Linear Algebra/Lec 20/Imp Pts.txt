@@ -1,0 +1,5 @@
+1. Tutorial Qn:-
+=> when A3 changes to A3' 
+-> Algebraically it is a linear transformation wrt A1
+-> Geometrically A3 moves parallel to A1 ,i.e, it inclines parallel to A1 to point A3' while keeping the height unchaged. Hence 
+   shape changes but volume doesn't. 

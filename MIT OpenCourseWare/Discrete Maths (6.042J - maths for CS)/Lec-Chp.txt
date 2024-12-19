@@ -1,0 +1,7 @@
+1. Lec1 = Chp1
+2. Lec2 = Chp2
+3. Lec3 = Chp3
+4. Lec4 = Chp5
+5. Lec5 = Chp4
+6. Lec6 = Chp6(some part) and Chp7(some part)
+7. Lec7 = Chp7

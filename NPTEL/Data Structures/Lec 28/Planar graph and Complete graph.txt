@@ -1,0 +1,6 @@
+=> A planar graph is a graph that can be drawn on a plane without any of its edges crossing each other. In other words, it is possible to 
+draw the graph in such a way that no two edges intersect except at their endpoints (vertices). 
+
+=> A complete graph is a type of graph in which every pair of distinct vertices is connected by a unique edge.
+-> Number of Edges: A complete graph with n vertices has nC2 edges.
+-> Degree of Each Vertex: In a complete graph, degree of each vertex is n-1

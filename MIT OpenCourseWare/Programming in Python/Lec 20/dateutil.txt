@@ -1,0 +1,10 @@
+-> parser.parse(<string variable>,fuzzy = <True or False>)
+
+-> fuzzy:-
+(i)The fuzzy parameter allows the parser to ignore unknown tokens in the date string, which can be useful for parsing more complex or 
+poorly formatted date strings.
+(ii) Ex:-
+date_string = "Today is May 19, 2023 and the time is 2:30 PM"
+date_object = parser.parse(date_string, fuzzy=True)
+print(date_object)
+# Output: 2023-05-19 14:30:00

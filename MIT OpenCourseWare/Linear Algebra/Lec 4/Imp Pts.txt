@@ -1,0 +1,15 @@
+-> A=LU=LDU ; where
+. D = diogonal matrix with pivots as dioganl entries; and for the LDU case 
+. L = Lower tri with 1's as diagonal entries
+. U = Uppper tri with 1's as diagonal entries
+
+			 [ 1 0 0 ]
+-> E21 inv matrix= | 2 1 0 | the pos (2,1) implies that while elimination process; for matirx A, R2=R2-2(= entry (2,1) of E21 inv)R1.
+			 [ 0 0 1 ]
+
+. Same ana holds true for E32 inv matrix.
+. Hence L matrix is of greater signi than E matrix.
+
+-> For elimination by A = LU decomposition (where row exchanges is prohibited) then cost of operation for the decompostion = (n^3)/3;
+for each iter(or col op on A) 'i-1' op to be done on  both A and E(elem matrix =  I(initially)) = (i-1)**2
+-> For elimination by augmented matrix method; cost = O(n^2); here no op on elem matrix on each iter hence each iter cost = i-1.

@@ -1,0 +1,7 @@
+=> For alpha = n/m; unsuccessful search : O(1+alpha)
+			  successful search   : O(1+alpha)
+-> Since hashing is done in unordered storage fashion; every new elem is added to the end of the linked list in case of chaining lest avoid 
+duplicate key entry.
+->Hence in order to find an elem successfully; num of searches made = num searhces while inserting + 1(for succesful elem found)
+											  = num of unsuccesful searches made(as elem is not present)[eqv to case 
+											    of ins elem] + 1

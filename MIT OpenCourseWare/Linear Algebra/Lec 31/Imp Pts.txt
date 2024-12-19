@@ -1,0 +1,6 @@
+=> Better basis:-(at 10:31 in the video)
+-> x = [1,1,...1]^T : vector to signify(represent) a solid image(say of whitish grey => scalar = 80(say) * x)
+-> y = [1,-1,1,-1,....,1,-1] : vector to represent a checkerboard
+-> z = [1,1,1,1..(half 1)....,-1,-1,-1,...(rest half -1)] : one half on colour one and 2nd half for contrast colour.
+
+=> wavelet basis vectors are orthogonal to each other

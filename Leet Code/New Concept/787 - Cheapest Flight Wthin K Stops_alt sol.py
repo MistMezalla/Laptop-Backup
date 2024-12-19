@@ -1,6 +1,6 @@
 '''
 -> Well some of the areas where my sol failed is that:-
-    -> for intermediate stops from src to dest the d[node/neighbour] nit updated properly as the corresponding nodes/
+    -> for intermediate stops from src to dest the d[node/neighbour] not updated properly as the corresponding nodes/
     neighbours were updated already to a val lesser than the curr_val
         -> for clarity on the abv pt try to dry run my sol onto marked test case in my sol
 

@@ -1,0 +1,3 @@
+-> entry (2,3) = A[2: ] dot B[ :3] ; method to check or find entry (2,3) of res matrix in case of multi of matrices.
+
+-> Matrix (auxilliary) used for exchanging the rows and columns of a matrix is called permutation matrix.

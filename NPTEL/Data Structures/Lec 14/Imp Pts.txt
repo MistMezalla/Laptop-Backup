@@ -1,0 +1,2 @@
+-> A black node may hv black and red childern but
+-> A red node must have only black childern

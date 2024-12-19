@@ -1,0 +1,13 @@
+1. Proof of #leaf nodes <= 1 + #int nodes(By PMI):-
+=> for last step of induction:-
+-> rec used the induction hypo for left and right sub tree and summed up to get the res for entire tree
+-> For instance, let k be the int nodes and m be the unt node in left sub tree
+-> thus int nodes in right sub tree = k-m-1 (one deducted of the root node)
+-> for left subtree:-
+. # leaf nodes <= 1 + #int nodes of left sub tree(=m)
+-> sim for right sub tree: #leaf nodes <= 1 + k-m-1
+-> total leaf nodes = #leaf nodes(left) + #leaf nodes(right)
+			  <= (m+1) + k-m = k+1
+
+HP.
+

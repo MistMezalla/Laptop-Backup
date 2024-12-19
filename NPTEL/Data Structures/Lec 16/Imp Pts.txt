@@ -1,0 +1,15 @@
+-> Only root node is stored on main memeory
+-> Rest all levels(and nodes corresponding to them are stored on disc(sec mem)) where;
+. Each node is kept on the pg of the disc
+
+-> Degree in case of B tree is the out degree of a node.
+
+=> Disadv of one pass ins and del:-
+-> If the insetrion and del are interspersed then when the root node is full say after del and followed by ins op then root node will split
+   and agn del occurs then root node will merge.
+-> Hence the abv 2 states will keep toggling if the ins and del ops are interspersed and not in blocks.
+
+=> one sol over abv prob is to use 2 pass with a tradeoff with main mem
+-> i.e. store the nodes traversed so far(# <= height of tree) in main mem to make the changes to them while passing up; without explicity
+   writing onto a page twice. 
+ 

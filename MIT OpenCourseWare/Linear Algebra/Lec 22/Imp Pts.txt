@@ -1,0 +1,8 @@
+=> uk+1 = A*uk ; it is a first order diff eqn coz
+-> k+1 - k = 1
+
+=> Sim, for Fk+2 = Fk+1 + Fk ; it is sec order diff eqn coz
+-> k+2(max) - k(min)
+
+=> The recurrence rel of Fk+2 = Fk+1 + Fk ; is ana is seen in the eigen values eqn of (lambda substi by L here) : l^2 - l - 1 = 0
+-> L<->Fk

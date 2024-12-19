@@ -1,0 +1,7 @@
+-> For a n dimesion matiex: #eigen vals = n
+-> sum of eigen values = Tr(matrix)
+
+-> Pure sym matrix will yeild real eigen values
+-> Pure anti(skew) sym matrix yeild complex eigen values
+
+-> For triangular matrices, eigen values are on the diagonal of the matrix.
