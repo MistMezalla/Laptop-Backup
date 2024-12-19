@@ -1,0 +1,2 @@
+=> In the form A=QR; R is the "upper tri" matrix ; coz
+-> every qi is constructed by subtracting the perp compo of preceding qi's of Q ana to og vectors of A.

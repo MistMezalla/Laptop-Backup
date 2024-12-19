@@ -1,0 +1,1 @@
+->Elimination process viz the ref or rref will change the column space of matrix but not  its null space

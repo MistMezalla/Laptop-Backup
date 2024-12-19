@@ -1,0 +1,9 @@
+=> For a (free) tree (also applicable for rooted trees):-
+-> #edges = #vertices - 1	
+
+=> For a graph to be connected:-
+-> min(#edges) = #vertices - 1; case for a tree(graph with no cycle)
+
+=> Suppose there is a graph with #vertices = n and #edges = n-k; then #connected components =?
+-> k if no cycles in the connnected compo
+-> >k if there are cycles in the connected compo

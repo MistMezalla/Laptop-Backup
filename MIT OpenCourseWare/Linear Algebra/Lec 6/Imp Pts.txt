@@ -1,0 +1,3 @@
+-> For Ax = b; if b=0 then x spans a subspace(rather a vector space to be precise)
+		 ; if b!=0 then x does not span a subspace(rather a vector space to be precise)
+ 

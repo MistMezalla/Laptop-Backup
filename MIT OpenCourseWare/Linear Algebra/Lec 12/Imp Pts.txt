@@ -1,0 +1,3 @@
+=> For incidence Matrix; closed loops lead to bunch of dep rows(where rows are the ones whose edges are in the loop).
+
+=> With ana of finding arbitrary const of indef integration where f(0)=some value is known; sim here

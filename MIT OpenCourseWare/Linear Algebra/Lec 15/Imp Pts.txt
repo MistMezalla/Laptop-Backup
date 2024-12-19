@@ -1,0 +1,5 @@
+=> with the ana of finding closest point on line form arbit vector coinitial but not parallel, 
+For Ax=b ; sys of linear eq, Ax is in C(A) while b is not always in C(A). So ana with abv line we try to fimd the closest vector in C(A) 
+by the virtue of proj concept.
+
+=> (A^T*A)^-1 = A^-1*(A^T)^-1 iff 'A is a aq matrix' ; else RHS is not true (wrt order of matrices)

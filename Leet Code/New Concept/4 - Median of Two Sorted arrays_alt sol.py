@@ -35,6 +35,7 @@ class Solution:
             l1 = l2 = float('-inf')
             r1 = r2 = float('inf')
 
+            #bound checks
             if mid1 < n1:
                 r1 = nums1[mid1]
             if mid1 > 0:

@@ -1,0 +1,2 @@
+-> By the Brute force method of finding strongly coneected graph, T(n) = O(n(n+m)) = O(n^2 + mn); since mn >> n^2 as in most cases m > n
+hence T(n) ~= O(mn)

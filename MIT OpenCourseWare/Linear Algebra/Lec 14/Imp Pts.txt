@@ -1,0 +1,5 @@
+=> dot product (matrix form) = X^T*Y;  matrix multi of X trans and Y
+
+=> X^T*Y = Y^T*X 
+
+=> A^T*A is not always invertible.

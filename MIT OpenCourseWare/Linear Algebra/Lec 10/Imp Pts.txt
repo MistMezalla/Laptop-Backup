@@ -1,0 +1,2 @@
+-> The row space of matrix and its rref is same as rref is found by taking the row operations on matirx. Sim if some rcef is found by doing
+column operations on matrix then column space would be preserved wrt the og matrix.

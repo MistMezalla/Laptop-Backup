@@ -1,0 +1,4 @@
+-> For the case of invesre of matrices:-
+. Left inverse and Right inverse are same for sq matrices only
+. For the rest (say rect) matrices left and rigth inverses are not the same as sizes are diff.
+

@@ -1,0 +1,11 @@
+-> center passed as parameter is a 'coordinate obj'(def earlier in the lifetime of the program)
+
+-> center as an argument is a mere variable ,i.e., it can accept any obj(data type) as parameter be it predefined obj (string, list,
+tuples, dcit, etc) or uer def obj (as in this case 'coordinate' obj).
+
+-> __str__ :- will return string type
+	     :- short hand = print(object)
+
+-> __mul__ :- return object
+	     :- sh = op1 * op2; where op1 -> self
+						op2 -> subsequent parameter   

@@ -1,0 +1,48 @@
+1. Connected Component
+-> Maximal connected subgraph => set(subgraph here) can't be extended by addition of new vertices and the corresponding edges witihout 
+					   violating certain rules of the of the set by which it was formed
+
+=> More precisely; based on type of connections a graph can be divided into 2 types viz:-
+-> Connected Graph: All vertices are reachable from each other by paths within the graph.
+Ex :- Graph A (Connected Graph):
+
+Vertices: {1, 2, 3, 4}
+Edges: {(1, 2), (2, 3), (3, 4), (4, 1)}
+
+-> Disconnected Graph: Not all vertices are reachable from each other. The graph can be divided into multiple connected components.
+Ex:- Graph B (Disconnected Graph):
+
+Vertices: {1, 2, 3, 4, 5, 6}
+Edges: {(1, 2), (2, 3), (3, 1), (4, 5), (5, 6)}
+
+=> Bottom of the line: In graph theory, a graph is a collection of vertices (or nodes) and edges (or links) that connect pairs of vertices.
+
+=> The tree mentioned in the lec are free(unrooted).
+
+=> More on connected components:- 
+-> Maximal: The subgraph cannot be made any larger without losing its connectivity. In other words, adding any more vertices (and the 
+associated edges from the supergraph) would result in a subgraph that is no longer connected.
+Ex:- Vertices: {1, 2, 3, 4, 5, 6}
+Edges: {(1, 2), (2, 3), (3, 1), (4, 5)}; this the desciption of og graph(supergraph)
+-> In this graph:-
+-> The subgraph containing vertices {1, 2, 3} and edges {(1, 2), (2, 3), (3, 1)} is a connected component. It is maximal connected 
+because adding any other vertex (4, 5, or 6) would require adding an edge that does not exist in the original graph to maintain 
+connectivity.
+-> The subgraph containing vertices {4, 5} and the edge {(4, 5)} is another connected component. It is also maximal connected because 
+adding vertex 6 would require an edge to maintain connectivity, which does not exist in the original graph.
+
+2. Number of vertices and edges
+=> For n verices of graph(undirected)
+-> min # edges  = 0
+-> max # edges = nC2(n choose 2: of P&C)
+
+=> For directed graph:- #edges = [0,2*nC2]
+
+3. Multigraphs
+=> A graph that has a notion of multiset vertices and egdes forms a multigraph
+-> A multiset eges => a pair of two vertices can have more than one egde between them(not talking abt a two way connection by d means of 
+directed edges)
+
+4. Eulerian Tour
+=> Must visit every 'edge' once and not every 'node'. Hence ervy node can be traversed more than once provided every edge is traversed not
+more than one.
