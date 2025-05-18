@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="71f705b9-e6bb-4ddb-8e4b-b85370490f8b" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2k42AEvgSX4KB2GHvY9h34OioEn" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Demo_Lab11.executor": "Run",
+    "Application.Demo_Lab3_Q1.executor": "Run",
+    "Application.Demo_Lab3_Q2.executor": "Run",
+    "Application.Demo_Lab9_Q1.executor": "Run",
+    "Application.Example.executor": "Run",
+    "Application.HelloWorld.executor": "Run",
+    "Application.HelloWorld1.executor": "Run",
+    "Application.JavaBasics.executor": "Run",
+    "Application.Main_Q1_Pr_Lab5.executor": "Run",
+    "Application.Q1_Lab4_Pr.executor": "Run",
+    "Application.Q2_Lab4_Pr.executor": "Run",
+    "Application.Shop.executor": "Run",
+    "Application.StaticPublic.executor": "Run",
+    "Application.Trial.executor": "Run",
+    "Application.static_public.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/HARSHAL/Desktop/Java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="71f705b9-e6bb-4ddb-8e4b-b85370490f8b" name="Changes" comment="" />
+      <created>1722528384683</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1722528384683</updated>
+    </task>
+    <servers />
+  </component>
+</project>
